@@ -1,0 +1,9 @@
+FileVersion:2
+Type:Static
+Guid:56AAC978-400A-C78F-3F83-86B3E35D5FB3
+ParentGuid:00000000-0000-0000-0000-000000000000
+
+/Game/Blueprints/TBRPG_GameMode.TBRPG_GameMode
+/Game/Blueprints/TBRPG_PlayerController.TBRPG_PlayerController
+/Game/Unit/PlayerUnit/PlayerUnitBase.PlayerUnitBase
+/Game/Unit/UnitBase.UnitBase
