@@ -5,3 +5,4 @@ ParentGuid:00000000-0000-0000-0000-000000000000
 
 /Game/Blueprints/TBRPG_GameMode.TBRPG_GameMode
 /Game/Blueprints/TBRPG_PlayerController.TBRPG_PlayerController
+/Game/Unit/UnitBase.UnitBase
