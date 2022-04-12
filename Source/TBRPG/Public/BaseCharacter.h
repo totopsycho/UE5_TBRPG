@@ -57,7 +57,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Abilities")
 	void RemoveAbilityWithTags(FGameplayTagContainer AbilityTags);
 
+	/** Returns the character level that is passed to the ability system */
+	UFUNCTION(BlueprintCallable)
+	virtual int32 GetCharacterLevel() const;
+
+	/** Modifies the character level, this may change abilities. Returns true on success */
+	UFUNCTION(BlueprintCallable)
+	virtual bool SetCharacterLevel(int32 NewLevel);
+
 protected:
+
+	/** The level of this character, should not be modified directly once it has already spawned */
+	UPROPERTY(EditAnywhere, Category = Abilities)
+	int32 CharacterLevel;
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
