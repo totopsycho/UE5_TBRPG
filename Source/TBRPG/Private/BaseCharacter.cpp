@@ -11,6 +11,8 @@ ABaseCharacter::ABaseCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	CharacterLevel = 1;
+
 	AbilitySystemComponent = CreateDefaultSubobject<UTBRPGAbilitySystemComponent>(TEXT("AbilitySystemComp"));
 
 	AttributeSetBaseComp = CreateDefaultSubobject <UAttributeSetBase>(TEXT("AttributeStatBaseComp"));
@@ -121,6 +123,24 @@ void ABaseCharacter::RemoveAbilityWithTags(FGameplayTagContainer AbilityTags)
 	{
 		AbilitySystemComponent->ClearAbility(Spec->Handle);
 	}
+}
+
+int32 ABaseCharacter::GetCharacterLevel() const
+{
+	return CharacterLevel;
+}
+
+bool ABaseCharacter::SetCharacterLevel(int32 NewLevel)
+{
+	if (CharacterLevel != NewLevel && NewLevel > 0)
+	{
+		// Our level changed so we need to refresh abilities
+		CharacterLevel = NewLevel;
+		
+
+		return true;
+	}
+	return false;
 }
 
 
