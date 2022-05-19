@@ -3,6 +3,7 @@ Type:Static
 Guid:9B715E15-4772-0308-601D-6994D61AF4FD
 ParentGuid:00000000-0000-0000-0000-000000000000
 
+/Game/Unit/PlayerUnit/CH_Archer/CH_Huntress.CH_Huntress
 /Game/Unit/PlayerUnit/CH_Melee/Reno.Reno
 /Game/Unit/PlayerUnit/Eberk/Eberk.Eberk
 /Game/Unit/PlayerUnit/Katalina/Katalina.Katalina
