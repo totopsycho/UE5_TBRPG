@@ -21,7 +21,7 @@
 		},
 		{
 			"Name": "RLLiveLink",
-			"Enabled": false,
+			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/f6a79afa7d0e4d429be8b993f7b6f5ad"
 		},
 		{
@@ -47,6 +47,10 @@
 		},
 		{
 			"Name": "Water",
+			"Enabled": true
+		},
+		{
+			"Name": "RLPlugin",
 			"Enabled": true
 		}
 	]
